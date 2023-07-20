@@ -1,3 +1,70 @@
+ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
+    margin: 0;
+    padding: 0;
     background-color: #EFF5F5;
+    font-family: 'Poppins', sans-serif;
+    color: #00425A;
   }
+
+nav{
+    background-color: #1F8A70;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0;
+}
+
+nav ul li a{
+    background-color: #EFF5F5;
+    color: black;
+    transition: all 800ms;
+}
+
+nav ul li a:hover{
+    background-color: #2ba977;
+    color: white;
+    transition: all 800ms;
+}
+
+#quienesart {
+    display: flex; /* Usamos Flexbox para organizar los divs en línea */
+    align-items: flex-start; /* Alineamos los divs en la parte superior */
+    max-width: 800px; /* Ancho máximo del contenedor (VER) */
+    margin: 0 auto; /* Centramos el contenedor horizontalmente */
+  }
+
+#divimgizq {
+    flex: 0 0 30%; /* Tamaño flexible de la imagen (ajusta el valor según tu diseño) */
+}
+
+#divimgizq img {
+    max-width: 100%; /* La imagen se ajustará automáticamente a su contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+  }
+
+#divpizq {
+flex: 1; /* El contenido ocupará el espacio restante */
+padding-left: 200px; /* Espacio entre la imagen y el contenido */
+}
+
+footer {
+    background-color: #181823;
+    color: #EFF5F5;
+}
