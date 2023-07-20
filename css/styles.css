@@ -1,70 +1,128 @@
-ul, li, a {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    color: inherit;
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #EFF5F5;
-    font-family: 'Poppins', sans-serif;
-    color: #00425A;
-  }
-
-nav{
-    background-color: #1F8A70;
-    display: flex;
-    justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: #eff5f5;
+  font-family: "Poppins", sans-serif;
+  color: #00425a;
 }
 
-nav ul{
-    display: flex;
-    margin: 0;
-    padding: 0; 
-    list-style: none;
+nav {
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
 }
 
-nav ul li{
-    margin: 0;
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-nav ul li a{
-    background-color: #EFF5F5;
-    color: black;
-    transition: all 800ms;
+nav ul li {
+  margin: 0;
 }
 
-nav ul li a:hover{
-    background-color: #2ba977;
-    color: white;
-    transition: all 800ms;
+nav ul li a {
+  background-color: #eff5f5;
+  color: black;
+  transition: all 800ms;
+}
+
+nav ul li a:hover {
+  background-color: rgb(248, 249, 250);
+  color: white;
+  transition: all 800ms;
+  border-radius: 8px;
 }
 
 #quienesart {
-    display: flex; /* Usamos Flexbox para organizar los divs en línea */
-    align-items: flex-start; /* Alineamos los divs en la parte superior */
-    max-width: 800px; /* Ancho máximo del contenedor (VER) */
-    margin: 0 auto; /* Centramos el contenedor horizontalmente */
-  }
+  display: flex; /* Usamos Flexbox para organizar los divs en línea */
+  align-items: flex-start; /* Alineamos los divs en la parte superior */
+  max-width: 800px; /* Ancho máximo del contenedor (VER) */
+  margin: 0 auto; /* Centramos el contenedor horizontalmente */
+}
 
 #divimgizq {
-    flex: 0 0 30%; /* Tamaño flexible de la imagen (ajusta el valor según tu diseño) */
+  flex: 0 0 30%; /* Tamaño flexible de la imagen (ajusta el valor según tu diseño) */
 }
 
 #divimgizq img {
-    max-width: 100%; /* La imagen se ajustará automáticamente a su contenedor */
-    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
-  }
+  max-width: 100%; /* La imagen se ajustará automáticamente a su contenedor */
+  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+}
 
 #divpizq {
-flex: 1; /* El contenido ocupará el espacio restante */
-padding-left: 200px; /* Espacio entre la imagen y el contenido */
+  flex: 1; /* El contenido ocupará el espacio restante */
+  padding-left: 200px; /* Espacio entre la imagen y el contenido */
+}
+.navbarCustom {
+  flex-direction: row-reverse;
+}
+.iconSection {
+  display: flex;
+  flex-direction: row-reverse;
+  column-gap: 15px;
+}
+.logoImg {
+  margin-top: 4px;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+}
+.redesSociales {
+  display: flex;
+  flex-direction: column;
+}
+.contenedorRedSocial {
+  display: flex;
+  column-gap: 15px;
+  cursor: pointer;
+}
+.tituloRedSocial {
+  margin-top: 4px;
+}
+.contenedorInfo {
+  height: 44px;
 }
 
 footer {
-    background-color: #181823;
-    color: #EFF5F5;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #e6e6e6;
+  color: #000000a6;
+  height: 180px;
+}
+/* BOTON WSP */
+.wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 47px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0df053;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.wsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background-color: white;
 }
