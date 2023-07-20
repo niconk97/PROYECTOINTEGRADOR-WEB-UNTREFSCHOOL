@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Instituto de educaciÃ³n primaria de gran prestigio."
+      content="Instituto de educación primaria de gran prestigio."
     />
     <meta name="author" content="Santiago Nicolas Iglesias" />
     <link
@@ -64,7 +64,113 @@
       </nav>
     </header>
 
-    <main></main>
+    <section>
+      <div class="container-fluid margenContenedorContacto">
+        <div class="row" style="justify-content: center">
+          <div class="tamanoContactos" style="margin-right: 5px">
+            <iframe
+              class="tamanoMapa"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1883612420247!2d-58.388758225004366!3d-34.59939815726877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac779c34103%3A0x41b3cd00fd3b23f3!2sAv.%20C%C3%B3rdoba%201350%2C%20C1055AAQ%20CABA!5e0!3m2!1ses!2sar!4v1689875804363!5m2!1ses!2sar"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="tamanoContactos">
+            <div class="contacto">
+              <h1 class="h1Contacto">Contacto</h1>
+              <p class="p1Contacto">
+                Contáctenos hoy mismo para ser parte de la institucion.
+              </p>
+              <p class="p2Contacto">Av. Cordoba 1350, Bs. As. - Argentina</p>
+              <div class="redesContacto">
+                <a class="iconoRedes" style="margin-right: 5px">
+                  <img
+                    alt="Facebook"
+                    src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_33,h_33,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Facebook.png"
+                    class="imgRedes"
+                  />
+                </a>
+                <a class="iconoRedes">
+                  <img
+                    alt="Instagram"
+                    src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_33,h_33,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Instagram.png"
+                    class="imgRedes"
+                  />
+                </a>
+              </div>
+            </div>
+            <div>
+              <form
+                class="row g-3"
+                target="_blank"
+                action="https://formsubmit.co/martin.iglesias21@gmail.com"
+                method="POST"
+              >
+                <div class="col-12">
+                  <label class="formulario" for="institucion" class="form-label"
+                    >Nombre Completo*</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bordeFormulario"
+                    id="institucion"
+                    required
+                    placeholder="Ingresa el nombre y apellido"
+                    name="name"
+                  />
+                </div>
+                <div class="col-12">
+                  <label class="formulario" for="inputEmail4" class="form-label"
+                    >Email*</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control bordeFormulario"
+                    id="inputEmail4"
+                    required
+                    placeholder="Ingresa el email"
+                    name="email"
+                  />
+                </div>
+                <div class="col-12">
+                  <label class="formulario" for="asunto" class="form-label"
+                    >Asunto</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bordeFormulario"
+                    id="asunto"
+                    placeholder="Escribe el asunto"
+                  />
+                </div>
+                <div class="col-12">
+                  <label
+                    class="formulario"
+                    for="floatingTextarea"
+                    class="form-label"
+                    >Mensaje</label
+                  >
+                  <textarea
+                    class="form-control bordeFormulario tamanoTextarea"
+                    pattern="[A-Za-z0-9_-@]"
+                    placeholder="Escribe tu mensaje aquí..."
+                    id="floatingTextarea"
+                    name="message"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-secondary btnEnviar">
+                    Enviar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="redesSociales">
@@ -102,7 +208,7 @@
           </div>
         </div>
       </div>
-      <div class="contacto">
+      <div>
         <h3>Contacto</h3>
         <div>
           <div class="contenedorInfo">
