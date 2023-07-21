@@ -20,6 +20,7 @@ nav {
   background-color: #e6e6e6;
   display: flex;
   justify-content: center;
+  z-index: 200;
 }
 
 nav ul {
@@ -46,46 +47,27 @@ nav ul li a:hover {
   border-radius: 8px;
 }
 
-#quienesart {
-  display: flex; /* Usamos Flexbox para organizar los divs en línea */
-  align-items: flex-start; /* Alineamos los divs en la parte superior */
-  max-width: 800px; /* Ancho máximo del contenedor (VER) */
-  margin: 0 auto; /* Centramos el contenedor horizontalmente */
+.articuloContenedor {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  column-gap: 5%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
 }
 
-#divimgizq {
-  flex: 0 0 30%; /* Tamaño flexible de la imagen (ajusta el valor según tu diseño) */
+.contenedorImg {
+    width: 40%;
 }
 
-#divimgizq img {
-  max-width: 100%; /* La imagen se ajustará automáticamente a su contenedor */
-  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+.imgArticulo {
+  max-width: 100%; 
+  height: auto; 
 }
 
-#divpizq {
-  flex: 1; /* El contenido ocupará el espacio restante */
-  padding-left: 200px; /* Espacio entre la imagen y el contenido */
-}
-
-#elegirnosart {
-    display: flex; /* Usamos Flexbox para organizar los divs en línea */
-    align-items: flex-start; /* Alineamos los divs en la parte superior */
-    max-width: 800px; /* Ancho máximo del contenedor (VER) */
-    margin: 0 auto; /* Centramos el contenedor horizontalmente */
-  }
-
-#divimgder {
-    flex: 0 0 30%; /* Tamaño flexible de la imagen (ajusta el valor según tu diseño) */
-  }
-  
-#divimgder img {
-max-width: 100%; /* La imagen se ajustará automáticamente a su contenedor */
-height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
-}
-
-#divpder {
-    flex: 1; /* El contenido ocupará el espacio restante */
-    padding-left: 200px; /* Espacio entre la imagen y el contenido */
+.contenedorParrafo {
+    width: 40%;
 }
 
 .navbarCustom {
@@ -101,18 +83,20 @@ height: auto; /* Ajusta la altura automáticamente para mantener la proporción 
   margin-top: 4px;
 }
 
-/* Estilos para el contenedor que contiene las cards */
-
+/* Estilos seccion cards */
+.tituloPropuesta {
+    text-align: center;
+    font-size: 40px;
+}
 .contenedorPropuesta{
     display: flex;
     justify-content: center;
-    gap: 20px; /* Ajusta la separación deseada entre las cards (en este ejemplo, 20px) */
+    flex-wrap: wrap;
+    gap: 20px; 
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-
-/* estilo para las cards*/
-
-/* Estilos para la card */
 .card {
     width: 18rem;
     border: 1px solid #ddd;
@@ -120,10 +104,8 @@ height: auto; /* Ajusta la altura automáticamente para mantener la proporción 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     margin-bottom: 20px;
-    flex-basis: calc(33.33% - 20px);
+    position: unset;
   }
-  
-  /* Estilos para la imagen */
   .card-img-top {
     width: 100%;
     height: 250px;
@@ -132,21 +114,15 @@ height: auto; /* Ajusta la altura automáticamente para mantener la proporción 
     justify-content: center;
     align-items: center;
   }
-  
-  /* Estilos para el cuerpo de la card */
   .card-body {
     padding: 15px;
     background-color: #00425A;
   }
-  
-  /* Estilos para el texto de la card */
   .card-text {
     font-size: 14px;
     line-height: 1.6;
     color: #EFF5F5;
   }
-  
-  /* Estilos para el texto en negrita */
   .card-text b {
     font-size: 18px;
     color: #EFF5F5;
@@ -154,8 +130,18 @@ height: auto; /* Ajusta la altura automáticamente para mantener la proporción 
 
 
 /* Fin estilo para cards */
-
-
+.tituloUltimasNoticias {
+    text-align: center;
+    font-size: 40px;
+}
+.articuloContenedorUltimasNot {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    column-gap: 5%;
+    justify-content: center;
+    margin-top: 45px;
+  }
 .sticky {
   position: sticky;
   top: 0;
@@ -275,7 +261,6 @@ footer {
   .contacto {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .p1Contacto {
     text-align: center;
@@ -288,7 +273,8 @@ footer {
     width: 100%;
   }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 600px) {
+    /* RESPONSIVE FORM */
   footer {
     flex-direction: column;
     height: 100%;
@@ -296,7 +282,6 @@ footer {
   .contacto {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .p1Contacto {
     text-align: center;
@@ -306,6 +291,29 @@ footer {
   }
   .btnEnviar {
     width: 100%;
+  }
+ .tituloItemContacto{
+    text-align: center;
+ }
+ 
+}
+@media screen and (max-width: 800px) {
+ /* RESPONSIVE INICIO */
+ .articuloContenedor{
+    flex-direction: column;
+  }
+  .contenedorImg{
+    width: 100%;
+  }
+  .contenedorParrafo{
+    width: 100%;
+  }
+  .articuloContenedorUltimasNot{
+    flex-direction: column;
+  }
+  .bordeParrafo{
+    border-bottom: 1px solid gray;
+    margin-bottom: 15px;
   }
 }
 /* FIN SECCION CONTACTO */
