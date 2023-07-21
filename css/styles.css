@@ -142,10 +142,7 @@ nav ul li a:hover {
     justify-content: center;
     margin-top: 45px;
   }
-.sticky {
-  position: sticky;
-  top: 0;
-}
+
 .redesSociales {
   display: flex;
   flex-direction: column;
